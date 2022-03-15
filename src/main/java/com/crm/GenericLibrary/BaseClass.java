@@ -38,7 +38,7 @@ public class BaseClass
 		Reporter.log("==== DataBase Connection Successful ====",true);
 	}
 	
-		@BeforeClass(groups = {"smokeSuite","regressionSuite"})
+   @BeforeClass(groups = {"smokeSuite","regressionSuite"})
 	
 //	@BeforeTest
 	//@Parameters("browser")
