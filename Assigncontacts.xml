@@ -5,7 +5,6 @@
     <classes>
       <class name="com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest"/>
       <class name="com.crm.assignmentcontactsTest.CreatecontactsDoNotCallCheckBoxTest"/>
-      <class name="com.crm.assignmentcontactsTest.CreateContactsandSendEmailTest"/>
       <class name="com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest"/>
       <class name="com.crm.assignmentcontactsTest.CreateContactReferanceTest"/>
       <class name="com.crm.assignmentcontactsTest.CreateContactTest"/>
