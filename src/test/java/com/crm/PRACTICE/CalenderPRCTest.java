@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class CalenderPRC 
+public class CalenderPRCTest 
 {
 	@Test
 	public void Selectdate() throws Throwable
