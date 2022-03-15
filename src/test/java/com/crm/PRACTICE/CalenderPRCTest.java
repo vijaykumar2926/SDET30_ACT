@@ -17,7 +17,6 @@ public class CalenderPRCTest
 		String Day = "16" , Month = "March" ,Year = "2022";
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://www.goibibo.com/");
 		driver.findElement(By.xpath("//p[.='Enter city or airport']")).click();
