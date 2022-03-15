@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smokeSuite"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.crm.Organizationtest.CreateOrganizationtests">
+        <methods>
+          <include name="createorg"/>
+          <include name="connectDataBase"/>
+          <include name="Login"/>
+          <include name="closeDataBase"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.Organizationtest.CreateOrganizationtests -->
+      <class name="com.crm.contactsTest.CreateContactsTest">
+        <methods>
+          <include name="createcontacts"/>
+          <include name="connectDataBase"/>
+          <include name="Login"/>
+          <include name="closeDataBase"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.contactsTest.CreateContactsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
