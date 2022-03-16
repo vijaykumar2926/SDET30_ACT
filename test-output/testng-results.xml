@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[==== DataBase Connection Successful ====]]>
@@ -8,10 +8,22 @@
       <![CDATA[==== Browser Launch Successful ====]]>
     </line>
     <line>
+      <![CDATA[==== Browser Launch Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Login To Appliction Successful ====]]>
+    </line>
+    <line>
       <![CDATA[==== Login To Appliction Successful ====]]>
     </line>
     <line>
       <![CDATA[clicked on contacts link]]>
+    </line>
+    <line>
+      <![CDATA[clicked on contacts link]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create contacts lookup image]]>
     </line>
     <line>
       <![CDATA[Clicked on create contacts lookup image]]>
@@ -23,6 +35,66 @@
       <![CDATA[Verification successful]]>
     </line>
     <line>
+      <![CDATA[New contacts created]]>
+    </line>
+    <line>
+      <![CDATA[Verification successful]]>
+    </line>
+    <line>
+      <![CDATA[==== Logout Of Application Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Logout Of Application Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Browser close Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Browser close Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Browser Launch Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Browser Launch Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Login To Appliction Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Login To Appliction Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[clicked on organization link]]>
+    </line>
+    <line>
+      <![CDATA[clicked on organization link]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create organization lookup image]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create organization lookup image]]>
+    </line>
+    <line>
+      <![CDATA[New organization created]]>
+    </line>
+    <line>
+      <![CDATA[New organization created]]>
+    </line>
+    <line>
+      <![CDATA[Verification successful]]>
+    </line>
+    <line>
+      <![CDATA[Verification successful]]>
+    </line>
+    <line>
+      <![CDATA[==== Logout Of Application Successful ====]]>
+    </line>
+    <line>
+      <![CDATA[==== Browser close Successful ====]]>
+    </line>
+    <line>
       <![CDATA[==== Logout Of Application Successful ====]]>
     </line>
     <line>
@@ -32,33 +104,32 @@
       <![CDATA[==== DataBase Close Successful ====]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-03-15T15:41:56 IST" name="Default suite" finished-at="2022-03-15T15:42:19 IST" duration-ms="23156">
+  <suite started-at="2022-03-16T10:09:17 IST" name="Suite" finished-at="2022-03-16T10:10:25 IST" duration-ms="67316">
     <groups>
+      <group name="smokeSuite">
+        <method signature="CreateOrganizationtests.createorg()[pri:0, instance:com.crm.Organizationtest.CreateOrganizationtests@54bff557]" name="createorg" class="com.crm.Organizationtest.CreateOrganizationtests"/>
+      </group> <!-- smokeSuite -->
+      <group name="regressionSuite">
+        <method signature="CreateOrgWithIndustryTest.createorgwithindustry()[pri:0, instance:com.crm.Organizationtest.CreateOrgWithIndustryTest@7d4f9aae]" name="createorgwithindustry" class="com.crm.Organizationtest.CreateOrgWithIndustryTest"/>
+      </group> <!-- regressionSuite -->
     </groups>
-    <test started-at="2022-03-15T15:41:56 IST" name="Default test" finished-at="2022-03-15T15:42:19 IST" duration-ms="23156">
-      <class name="com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest">
-        <test-method is-config="true" signature="connectDataBase()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest@e15b7e8]" started-at="2022-03-15T15:41:56 IST" name="connectDataBase" finished-at="2022-03-15T15:41:56 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[==== DataBase Connection Successful ====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- connectDataBase -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest@e15b7e8]" started-at="2022-03-15T15:41:56 IST" name="launchTheBrowser" finished-at="2022-03-15T15:42:00 IST" duration-ms="4135" status="PASS">
+    <test started-at="2022-03-16T10:09:17 IST" name="Test1" finished-at="2022-03-16T10:10:23 IST" duration-ms="66275">
+      <class name="com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest@6392827e]" started-at="2022-03-16T10:09:17 IST" name="launchTheBrowser" finished-at="2022-03-16T10:09:22 IST" duration-ms="4586" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==== Browser Launch Successful ====]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest@e15b7e8]" started-at="2022-03-15T15:42:00 IST" name="Login" finished-at="2022-03-15T15:42:04 IST" duration-ms="4387" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest@6392827e]" started-at="2022-03-16T10:09:22 IST" name="Login" finished-at="2022-03-16T10:09:27 IST" duration-ms="5650" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==== Login To Appliction Successful ====]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CreateContactEmailOptEnabledOrNot()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest@e15b7e8]" started-at="2022-03-15T15:42:04 IST" name="CreateContactEmailOptEnabledOrNot" finished-at="2022-03-15T15:42:17 IST" duration-ms="12407" status="PASS">
+        <test-method signature="CreateContactsNotifyOwner()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest@6392827e]" started-at="2022-03-16T10:09:27 IST" name="CreateContactsNotifyOwner" finished-at="2022-03-16T10:09:47 IST" duration-ms="19531" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[clicked on contacts link]]>
@@ -73,29 +144,176 @@
               <![CDATA[Verification successful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CreateContactEmailOptEnabledOrNot -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest@e15b7e8]" started-at="2022-03-15T15:42:17 IST" name="logout" finished-at="2022-03-15T15:42:18 IST" duration-ms="1897" status="PASS">
+        </test-method> <!-- CreateContactsNotifyOwner -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest@6392827e]" started-at="2022-03-16T10:09:47 IST" name="logout" finished-at="2022-03-16T10:09:50 IST" duration-ms="2840" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==== Logout Of Application Successful ====]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest@e15b7e8]" started-at="2022-03-15T15:42:18 IST" name="closeBrowser" finished-at="2022-03-15T15:42:19 IST" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest@6392827e]" started-at="2022-03-16T10:09:50 IST" name="closeBrowser" finished-at="2022-03-16T10:09:51 IST" duration-ms="917" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==== Browser close Successful ====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest@e15b7e8]" started-at="2022-03-15T15:42:19 IST" name="closeDataBase" finished-at="2022-03-15T15:42:19 IST" duration-ms="1" status="PASS">
+      </class> <!-- com.crm.assignmentcontactsTest.CreateContactsNotifyOwnerTest -->
+      <class name="com.crm.Organizationtest.CreateOrganizationtests">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.Organizationtest.CreateOrganizationtests@54bff557]" started-at="2022-03-16T10:09:51 IST" name="launchTheBrowser" finished-at="2022-03-16T10:09:54 IST" duration-ms="3041" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Browser Launch Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Organizationtest.CreateOrganizationtests@54bff557]" started-at="2022-03-16T10:09:54 IST" name="Login" finished-at="2022-03-16T10:10:00 IST" duration-ms="5731" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Login To Appliction Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="createorg()[pri:0, instance:com.crm.Organizationtest.CreateOrganizationtests@54bff557]" started-at="2022-03-16T10:10:00 IST" name="createorg" finished-at="2022-03-16T10:10:21 IST" duration-ms="21265" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[clicked on organization link]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create organization lookup image]]>
+            </line>
+            <line>
+              <![CDATA[New organization created]]>
+            </line>
+            <line>
+              <![CDATA[Verification successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createorg -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.Organizationtest.CreateOrganizationtests@54bff557]" started-at="2022-03-16T10:10:21 IST" name="logout" finished-at="2022-03-16T10:10:23 IST" duration-ms="2307" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Logout Of Application Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.Organizationtest.CreateOrganizationtests@54bff557]" started-at="2022-03-16T10:10:23 IST" name="closeBrowser" finished-at="2022-03-16T10:10:23 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Browser close Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.Organizationtest.CreateOrganizationtests -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-03-16T10:09:17 IST" name="Test2" finished-at="2022-03-16T10:10:25 IST" duration-ms="67316">
+      <class name="com.crm.Organizationtest.CreateOrgWithIndustryTest">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.Organizationtest.CreateOrgWithIndustryTest@7d4f9aae]" started-at="2022-03-16T10:09:51 IST" name="launchTheBrowser" finished-at="2022-03-16T10:09:55 IST" duration-ms="3589" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Browser Launch Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Organizationtest.CreateOrgWithIndustryTest@7d4f9aae]" started-at="2022-03-16T10:09:55 IST" name="Login" finished-at="2022-03-16T10:10:01 IST" duration-ms="6292" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Login To Appliction Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="createorgwithindustry()[pri:0, instance:com.crm.Organizationtest.CreateOrgWithIndustryTest@7d4f9aae]" started-at="2022-03-16T10:10:01 IST" name="createorgwithindustry" finished-at="2022-03-16T10:10:22 IST" duration-ms="20643" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[clicked on organization link]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create organization lookup image]]>
+            </line>
+            <line>
+              <![CDATA[New organization created]]>
+            </line>
+            <line>
+              <![CDATA[Verification successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createorgwithindustry -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.Organizationtest.CreateOrgWithIndustryTest@7d4f9aae]" started-at="2022-03-16T10:10:22 IST" name="logout" finished-at="2022-03-16T10:10:24 IST" duration-ms="2346" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Logout Of Application Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.Organizationtest.CreateOrgWithIndustryTest@7d4f9aae]" started-at="2022-03-16T10:10:24 IST" name="closeBrowser" finished-at="2022-03-16T10:10:25 IST" duration-ms="568" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Browser close Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.Organizationtest.CreateOrgWithIndustryTest -->
+      <class name="com.crm.assignmentcontactsTest.CreateContactReferanceTest">
+        <test-method is-config="true" signature="connectDataBase()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactReferanceTest@b9b00e0]" started-at="2022-03-16T10:09:17 IST" name="connectDataBase" finished-at="2022-03-16T10:09:17 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== DataBase Connection Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectDataBase -->
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactReferanceTest@b9b00e0]" started-at="2022-03-16T10:09:17 IST" name="launchTheBrowser" finished-at="2022-03-16T10:09:21 IST" duration-ms="4010" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Browser Launch Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactReferanceTest@b9b00e0]" started-at="2022-03-16T10:09:21 IST" name="Login" finished-at="2022-03-16T10:09:28 IST" duration-ms="6993" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Login To Appliction Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="CreateContactReferance()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactReferanceTest@b9b00e0]" started-at="2022-03-16T10:09:28 IST" name="CreateContactReferance" finished-at="2022-03-16T10:09:48 IST" duration-ms="19523" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[clicked on contacts link]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create contacts lookup image]]>
+            </line>
+            <line>
+              <![CDATA[New contacts created]]>
+            </line>
+            <line>
+              <![CDATA[Verification successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateContactReferance -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactReferanceTest@b9b00e0]" started-at="2022-03-16T10:09:48 IST" name="logout" finished-at="2022-03-16T10:09:50 IST" duration-ms="2497" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Logout Of Application Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactReferanceTest@b9b00e0]" started-at="2022-03-16T10:09:50 IST" name="closeBrowser" finished-at="2022-03-16T10:09:51 IST" duration-ms="804" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==== Browser close Successful ====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:com.crm.assignmentcontactsTest.CreateContactReferanceTest@b9b00e0]" started-at="2022-03-16T10:10:25 IST" name="closeDataBase" finished-at="2022-03-16T10:10:25 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==== DataBase Close Successful ====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeDataBase -->
-      </class> <!-- com.crm.assignmentcontactsTest.CreateContactEmailOptEnabledOrNotTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.crm.assignmentcontactsTest.CreateContactReferanceTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
