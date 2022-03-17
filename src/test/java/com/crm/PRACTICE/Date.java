@@ -5,6 +5,7 @@ import java.util.Calendar;
 
 import javax.swing.text.DateFormatter;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Date 
@@ -12,6 +13,7 @@ public class Date
 @Test
 public void tests()
 {
+	Assert.fail();
 	java.util.Date d = new java.util.Date();
 	Calendar c = Calendar.getInstance();
 	c.setTime(d);

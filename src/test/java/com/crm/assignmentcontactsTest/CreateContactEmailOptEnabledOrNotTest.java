@@ -26,7 +26,7 @@ public class CreateContactEmailOptEnabledOrNotTest extends BaseClass //TC_23
 		hp.clickOnContactLink();
 		Reporter.log("clicked on contacts link", true);
 
-		
+		Assert.fail();
 		/* Navigate to "create new Contact"page by click on "+" image */
 		ContactsPage cp = new ContactsPage(driver);
 		cp.clickOnCreateContactsLink();

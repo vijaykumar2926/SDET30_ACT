@@ -327,14 +327,17 @@ public class Webdriverutility
 	 * This method will take screenshot
 	 * @param driver
 	 * @param screenShotName
+	 * @return 
 	 * @throws Throwable
 	 */
-	public void getScreenShot(WebDriver driver, String screenShotName) throws Throwable
+	public String getScreenShot(WebDriver driver, String screenShotName) throws Throwable
 	{
 		TakesScreenshot tss = (TakesScreenshot) driver;
 		File src = tss.getScreenshotAs(OutputType.FILE);
-		File dst = new File("./Screenshot/"+screenShotName+".png");
+		String path = "./Screenshot/"+screenShotName+".png";
+		File dst = new File(path);
 		Files.copy(src, dst);
+		return dst.getAbsolutePath();
 	}
 	
 	/**

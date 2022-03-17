@@ -10,35 +10,38 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+
 public class ListenerImplimentationClass implements ITestListener
 {
 
 	ExtentReports report;
 	ExtentTest test;
 	
-	
 	public void onFinish(ITestContext context) 
 	{
-		// consolidate all the parameter and generate report
+	
+		// Consolidate all the parameter and generate the report
 		report.flush();
+		
 	}
 
 	public void onStart(ITestContext context) {
 
-		//Execution starts here 
-		/* configure the report */
-		ExtentSparkReporter htmlreport = new ExtentSparkReporter("./ExtentsReport"+new JavaUtility().getsystemdateinformat());
+		// execution will start here
+		/* configure  the report */
+		ExtentSparkReporter htmlreport = new ExtentSparkReporter("./ExtentReport/Report"+new JavaUtility().getsystemdateinformat()+".html");
 		htmlreport.config().setDocumentTitle("SDET-30 Execution Report");
-		htmlreport.config().setTheme(Theme.STANDARD);
-		htmlreport.config().setReportName("Selenium Execution Report");
+		htmlreport.config().setTheme(Theme.DARK);
+		htmlreport.config().setReportName("Selenium Execution Report ");
 		
 		report = new ExtentReports();
 		report.attachReporter(htmlreport);
-		report.setSystemInfo("Base-Browser", "chrome");
-		report.setSystemInfo("OS", "windows");
-		report.setSystemInfo("Base-url", "http://localhost:8888");
-		report.setSystemInfo("Reporter name", "vijay");
-
+		report.setSystemInfo("Base-browser", "chrome");
+		report.setSystemInfo("OS", "Windows");
+		report.setSystemInfo("Base-URL", "http://localhost:8888");
+		report.setSystemInfo("Reporter Name", "Vijay");
+		
+	
 		
 	}
 
@@ -53,11 +56,11 @@ public class ListenerImplimentationClass implements ITestListener
 	public void onTestFailure(ITestResult result) {
 		
 		String MethodName = result.getMethod().getMethodName();
-		
+		String path=null;
 		//Step 1: Configure screenshot name
 		String screenshotname = MethodName+"-"+ new JavaUtility().getsystemdateinformat();
 		try {
-			new Webdriverutility().getScreenShot(BaseClass.sdriver, screenshotname);
+			path =  new Webdriverutility().getScreenShot(BaseClass.sdriver, screenshotname);
 			
 			//EventFiringWebDriver eDriver = new EventFiringWebDriver(BaseClass.sDriver);
 			//File src = eDriver.getScreenshotAs(OutputType.FILE);
@@ -69,28 +72,33 @@ public class ListenerImplimentationClass implements ITestListener
 			e.printStackTrace();
 		}
 		
-		test.log(Status.FAIL, MethodName+"---> TestScript FAILED");
+		test.log(Status.FAIL, MethodName+"---> testscript execution FAILED");
+		test.log(Status.FAIL, result.getThrowable());
+		test.addScreenCaptureFromPath(path);
+
 
 	}
 
 	public void onTestSkipped(ITestResult result) {
 	
 		String MethodName =	result.getMethod().getMethodName();
-		test.log(Status.SKIP, MethodName+"---> TestScript SKIPPED");
-		// This will capture the exception and log it in report
+		test.log(Status.SKIP, MethodName+"---> testscript execution SKIPPED");
 		test.log(Status.SKIP, result.getThrowable());
-
+		
 	}
 
 	public void onTestStart(ITestResult result) {
 		
 		String MethodName =	result.getMethod().getMethodName();
 		System.out.println(MethodName+"---> testscript execution STARTED");
+		test = report.createTest(MethodName);
 	}
 
 	public void onTestSuccess(ITestResult result) 
 	{
 		String MethodName =	result.getMethod().getMethodName();
-		System.out.println(MethodName+"---> testscript execution sucessfull - PASS");
+		test.log(Status.PASS, MethodName+"---> testscript execution PASSED");
+		
+		
 	}
 }
