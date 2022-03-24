@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.PRACTICE.BookFlightForTodaysDate">
+      <class name="com.crm.contactsTest.CreateContactsTest">
         <methods>
-          <include name="bookFlightForCurrentDate"/>
+          <include name="createcontacts"/>
+          <include name="closeBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="connectDataBase"/>
+          <include name="Login"/>
+          <include name="closeDataBase"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- com.crm.PRACTICE.BookFlightForTodaysDate -->
+      </class> <!-- com.crm.contactsTest.CreateContactsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
